@@ -13,4 +13,11 @@ public class Capybara extends Animal implements HuntingStyle{
     public void hello() {
 
     }
+
+    @Override
+    public String toString() {
+        return "Capybara{" +
+                "color='" + color + '\'' +
+                '}';
+    }
 }

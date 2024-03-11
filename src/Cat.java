@@ -1,4 +1,13 @@
-public class Cat extends Animal implements HuntingStyle{
+import java.io.Serializable;
+
+public class Cat extends Animal implements HuntingStyle, Serializable {
+    public Cat(String color){
+        this.color = color;
+    }
+
+    public Cat() {
+    }
+
     @Override
     public void voice() {
         System.out.println("мяу");
@@ -9,8 +18,12 @@ public class Cat extends Animal implements HuntingStyle{
         System.out.println("кошка охотится на корм");
     }
 
-    @Override
-    public void hello() {
 
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "color='" + color + '\'' +
+                '}';
     }
 }
