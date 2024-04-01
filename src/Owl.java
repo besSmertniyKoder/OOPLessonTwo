@@ -1,4 +1,4 @@
-public class Owl extends Animal implements HuntingStyle{
+public class Owl extends Animal {
     @Override
     public void voice() {
         System.out.println("звуки совы");

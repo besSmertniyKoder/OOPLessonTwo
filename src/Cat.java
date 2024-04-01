@@ -1,6 +1,7 @@
 import java.io.Serializable;
+import java.util.Iterator;
 
-public class Cat extends Animal implements HuntingStyle, Serializable {
+public class Cat extends Animal  {
     public Cat(String color){
         this.color = color;
     }
